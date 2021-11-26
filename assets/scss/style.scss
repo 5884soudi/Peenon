@@ -1,0 +1,93 @@
+// ヘッダー部分は別のscssからインポート-----------
+@import "./header";
+
+//--- infoの基本設定 -------------------------
+@mixin info {
+    .info {
+        margin-top: 80px;
+        margin-left: 22px;
+
+        h1 {
+            font-size: 30px;
+            border-bottom: solid 4px aqua;
+            max-width: 300px;
+        }
+    }
+}
+//---- ここまで -------------------------
+
+//-------- Attentionの部分 -------------------------------
+// swiperの部分
+@import "./swiper";
+
+.Attention {
+    @include info;
+    p {
+        margin-top: 22px;
+        margin-left: 22px;
+    }
+}
+
+//----- Interestの部分 -----------------------------------
+.Interest {
+    @include info;
+    .info {
+        margin-top: 60px;
+        .comment {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: red;
+        }
+        p {
+            font-weight: bold;
+        }
+        table {
+            margin-top: 22px;
+            margin-left: 22px;
+            margin-bottom: 30px;
+            th,
+            td {
+                height: 30px;
+                width: 60px;
+                border: solid 1px black;
+                font-size: 18px;
+            }
+            td {
+                text-align: end;
+            }
+        }
+    }
+}
+
+//----- Actionの部分 -----------------------------------
+.Action {
+    @include info;
+    .info {
+        .reserve {
+            margin-top: 22px;
+            margin-left: 22px;
+        }
+    }
+}
+
+//----- Shareの部分 -----------------------------------
+.Share {
+    @include info;
+    .info {
+        p {
+            margin-top: 12px;
+            margin-left: 22px;
+        }
+        iframe {
+            margin-top: 22px;
+        }
+    }
+}
+@media screen and (min-width: 751px) {
+    a[href^="tel:"] {
+        pointer-events: none;
+        cursor: default;
+    }
+}

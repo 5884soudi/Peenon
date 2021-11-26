@@ -1,0 +1,28 @@
+header {
+    height: 70px;
+    width: 100vw;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        img {
+            height: 60px;
+            width: auto;
+            border-radius: 50%;
+            margin-left:    10px;
+        }
+    }
+    p {
+        font-size: 30px;
+        color: white;        
+    }
+    .header-right {
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-right: 30px;
+        }
+    }
+}

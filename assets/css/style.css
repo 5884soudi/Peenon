@@ -1,0 +1,217 @@
+header {
+  height: 70px;
+  width: 100vw;
+  background-color: brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header span img {
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+header p {
+  font-size: 30px;
+  color: white;
+}
+
+header .header-right p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-right: 30px;
+}
+
+.swiper {
+  margin-top: 30px;
+  height: 400px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.swiper .swiper-wrapper .swiper-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper .swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 300ms opacity;
+  transition: 300ms opacity;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.Attention .info {
+  margin-top: 80px;
+  margin-left: 22px;
+}
+
+.Attention .info h1 {
+  font-size: 30px;
+  border-bottom: solid 4px aqua;
+  max-width: 300px;
+}
+
+.Attention p {
+  margin-top: 22px;
+  margin-left: 22px;
+}
+
+.Interest .info {
+  margin-top: 80px;
+  margin-left: 22px;
+}
+
+.Interest .info h1 {
+  font-size: 30px;
+  border-bottom: solid 4px aqua;
+  max-width: 300px;
+}
+
+.Interest .info {
+  margin-top: 60px;
+}
+
+.Interest .info .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.Interest .info h2 {
+  color: red;
+}
+
+.Interest .info p {
+  font-weight: bold;
+}
+
+.Interest .info table {
+  margin-top: 22px;
+  margin-left: 22px;
+  margin-bottom: 30px;
+}
+
+.Interest .info table th,
+.Interest .info table td {
+  height: 30px;
+  width: 60px;
+  border: solid 1px black;
+  font-size: 18px;
+}
+
+.Interest .info table td {
+  text-align: end;
+}
+
+.Action .info {
+  margin-top: 80px;
+  margin-left: 22px;
+}
+
+.Action .info h1 {
+  font-size: 30px;
+  border-bottom: solid 4px aqua;
+  max-width: 300px;
+}
+
+.Action .info .reserve {
+  margin-top: 22px;
+  margin-left: 22px;
+}
+
+.Share .info {
+  margin-top: 80px;
+  margin-left: 22px;
+}
+
+.Share .info h1 {
+  font-size: 30px;
+  border-bottom: solid 4px aqua;
+  max-width: 300px;
+}
+
+.Share .info p {
+  margin-top: 12px;
+  margin-left: 22px;
+}
+
+.Share .info iframe {
+  margin-top: 22px;
+}
+
+@media screen and (min-width: 751px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+/*# sourceMappingURL=style.css.map */
