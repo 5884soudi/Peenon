@@ -83,6 +83,7 @@
         iframe {
             margin-top: 22px;
             margin-left: 100px;
+            width: 700px;
         }
     }
 }
@@ -99,13 +100,74 @@ footer {
     }
 }
 
+//----- ここからレスポンシブ対応 -----------------------------------
+@media screen and(max-width:760px) {
+    //----- へッターの部分 -----------------------------------
+    header {
+        span {
+            img {
+                height: 30px;
+                width: auto;
+            }
+        }
+        p {
+            font-size: 20px;
+        }
+        .header-right {
+            display: none;
+        }
+    }
 
+    //----- Attentionの部分 -----------------------------------
+    .Attention {
+        .swiper {
+            height: 150px;
+            width: 200px;
+            .swiper-wrapper {
+                .swiper-slide {
+                    height: auto;
+                    img {
+                        height: 100%;
+                        // align-self: center;
+                    }
+                }
+            }
+        }
+        .info {
+            margin-left: 12px;
+        }
+    }
 
-
-
-
-
-
+    //----- Interestの部分 -----------------------------------
+    .Interest {
+        .info {
+            margin-left: 12px;
+        }
+    }
+    //----- Actionの部分 -----------------------------------
+    .Action {
+        .info {
+            margin-left: 12px;
+        }
+    }
+    //----- Shareの部分 -----------------------------------
+    .Share {
+        .info {
+            margin-left: 12px;
+            iframe {
+                margin-left: 40px;
+                width: 300px;
+                height: 150px;
+            }
+        }
+    }
+    //----- footerの部分 -----------------------------------
+    footer {
+        p {
+            font-size: 20px;
+        }
+    }
+}
 
 // @media screen and (min-width: 751px) {
 //     a[href^="tel:"] {

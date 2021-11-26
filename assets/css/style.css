@@ -207,6 +207,7 @@ header .header-right p {
 .Share .info iframe {
   margin-top: 22px;
   margin-left: 100px;
+  width: 700px;
 }
 
 footer {
@@ -225,5 +226,48 @@ footer {
 
 footer p {
   font-size: 30px;
+}
+
+@media screen and (max-width: 760px) {
+  header span img {
+    height: 30px;
+    width: auto;
+  }
+  header p {
+    font-size: 20px;
+  }
+  header .header-right {
+    display: none;
+  }
+  .Attention .swiper {
+    height: 150px;
+    width: 200px;
+  }
+  .Attention .swiper .swiper-wrapper .swiper-slide {
+    height: auto;
+  }
+  .Attention .swiper .swiper-wrapper .swiper-slide img {
+    height: 100%;
+  }
+  .Attention .info {
+    margin-left: 12px;
+  }
+  .Interest .info {
+    margin-left: 12px;
+  }
+  .Action .info {
+    margin-left: 12px;
+  }
+  .Share .info {
+    margin-left: 12px;
+  }
+  .Share .info iframe {
+    margin-left: 40px;
+    width: 300px;
+    height: 150px;
+  }
+  footer p {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
