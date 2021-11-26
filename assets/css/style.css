@@ -110,7 +110,7 @@ header .header-right p {
 
 .Attention .info {
   margin-top: 80px;
-  margin-left: 22px;
+  margin-left: 200px;
 }
 
 .Attention .info h1 {
@@ -126,7 +126,7 @@ header .header-right p {
 
 .Interest .info {
   margin-top: 80px;
-  margin-left: 22px;
+  margin-left: 200px;
 }
 
 .Interest .info h1 {
@@ -174,7 +174,7 @@ header .header-right p {
 
 .Action .info {
   margin-top: 80px;
-  margin-left: 22px;
+  margin-left: 200px;
 }
 
 .Action .info h1 {
@@ -190,7 +190,7 @@ header .header-right p {
 
 .Share .info {
   margin-top: 80px;
-  margin-left: 22px;
+  margin-left: 200px;
 }
 
 .Share .info h1 {
@@ -206,12 +206,24 @@ header .header-right p {
 
 .Share .info iframe {
   margin-top: 22px;
+  margin-left: 100px;
 }
 
-@media screen and (min-width: 751px) {
-  a[href^="tel:"] {
-    pointer-events: none;
-    cursor: default;
-  }
+footer {
+  height: 70px;
+  background-color: burlywood;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
