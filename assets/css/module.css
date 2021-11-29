@@ -63,4 +63,52 @@
   opacity: 1;
   visibility: visible;
 }
+
+.ham {
+  display: block;
+  background-color: pink;
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.ham .pate {
+  display: block;
+  background-color: black;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.menu {
+  background-color: lawngreen;
+  height: 70%;
+  width: 50%;
+  position: fixed;
+  top: 50px;
+  left: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=module.css.map */

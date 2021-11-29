@@ -80,6 +80,10 @@
             margin-top: 12px;
             margin-left: 22px;
         }
+        a {
+            color: black;
+            text-decoration: none;
+        }
         iframe {
             margin-top: 22px;
             margin-left: 100px;
@@ -104,17 +108,82 @@ footer {
 @media screen and(max-width:760px) {
     //----- へッターの部分 -----------------------------------
     header {
+        justify-content: left;
         span {
             img {
-                height: 30px;
-                width: auto;
+                display: none;
             }
         }
         p {
             font-size: 20px;
+            padding-left: 15px;
         }
         .header-right {
             display: none;
+        }
+        .fadeIn {
+            background-color: rgba(128, 128, 128, 0.856);
+            height: 20%;
+            width: 90%;
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 5;
+            p {
+                font-size: 30px;
+            }
+        }
+        // ハンバーガーメニュー
+        .hamburger {
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            top: 15px;
+            right: 5px;
+            background-color: chocolate;
+            padding: 5px;
+            border-radius: 50%;
+            z-index: 10;
+            .pate,
+            .pate::before,
+            .pate::after {
+                width: 100%;
+                height: 5px;
+                display: block;
+                background-color: black;
+                border-radius: 2px;
+                transition: all 0.5s ease;
+            }
+            .pate {
+                position: relative;
+                top: calc(50% - 2px);
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                }
+                &::before {
+                    top: -9px;
+                }
+                &::after {
+                    top: 9px;
+                }
+            }
+        }
+        .on {
+            .pate {
+                background-color: transparent;
+                &::before {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                &::after {
+                    transform: rotate(-45deg) translate(7px, -8px);
+                }
+            }
         }
     }
 
@@ -162,19 +231,23 @@ footer {
                 width: 300px;
                 height: 150px;
             }
+            a {
+                color: deepskyblue;                
+            }
         }
     }
     //----- footerの部分 -----------------------------------
     footer {
+        // height: 30vh;
         p {
             font-size: 20px;
         }
     }
 }
 
-// @media screen and (min-width: 751px) {
-//     a[href^="tel:"] {
-//         pointer-events: none;
-//         cursor: default;
-//     }
-// }
+@media screen and (min-width: 751px) {
+    a[href^="tel:"] {
+        pointer-events: none;
+        cursor: default;
+    }
+}

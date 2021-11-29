@@ -28,5 +28,14 @@ $(function () {
         },
         
     });
+
+    $('.hamburger').on('click',function(){
+        $(this).toggleClass('on');
+        if($('.hamburger').hasClass('on')) {
+            $('.header-right').addClass('fadeIn');
+        }else{
+            $('.header-right').removeClass('fadeIn');
+        }
+    });
     
 })

@@ -51,3 +51,78 @@
     opacity: 1;
     visibility: visible;
 }
+
+.ham {
+    display: block;
+    background-color: pink;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 50%;
+    .pate {
+        display: block;
+        background-color: black;
+        height: 5px;
+        border-radius: 5px;
+    }
+    .none {
+
+        // @keyframes fadeOut {
+        //     from {
+        //         opacity: 1;
+        //     }
+        //     to {
+        //         opacity: 0;
+        //     }
+        // }
+        // animation-name: fadeOut;
+        // animation-duration: 0.5s;
+        // animation-timing-function: linear;
+        // animation-delay: 0s;
+        // animation-iteration-count: 1;
+        // animation-direction: normal;
+        // animation-fill-mode: forwards;
+    }
+}
+
+// .menu {
+//     width: 70%;
+//     height: 100vh;
+//     margin-left: auto;
+//     display: flex;
+//     flex-direction: column;
+//     color: #ffff;
+//     background-color: rgba(167, 148, 58, 0.7);
+//     transition: 0.3s;
+//     /* メニューの位置マイナス指定で画面外に */
+//     position: fixed;
+//     right: -70%;
+//     width: 70%;
+//     height: 100vh;
+// }
+// .menu-list {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+.menu {
+    background-color: lawngreen;
+    height: 70%;
+    width: 50%;
+    position: fixed;
+    top: 50px;
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
